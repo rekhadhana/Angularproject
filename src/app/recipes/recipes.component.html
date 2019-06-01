@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-sm-5 col-lg-4">
+     
+      <app-recipe-list>
+
+    <!-- now pass this information to the recipe-detail component bellow -->
+      </app-recipe-list>
+      <!-- implementing custom event recipeWasSelected -->
+    </div>
+    <div class="col-sm-5 col-lg-7">
+
+        <!-- for child routes -->
+        <router-outlet></router-outlet>
+        
+
+      <!-- <app-recipe-detail 
+      *ngIf="selectedRecipe; else infoTxt"
+      [recipe]="selectedRecipe">
+      <!-- now pass data to the component -->
+      <!-- </app-recipe-detail>
+      <ng-template #infoTxt>
+          <p appHighlight>Please Select a Recipe</p>
+        </ng-template> -->
+    </div>
+  </div>

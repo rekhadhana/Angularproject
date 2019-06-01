@@ -1,0 +1,21 @@
+<!-- remove href="#" to a and it will make page reloads -->
+
+<a style="cursor:pointer"  defaultbgColor='lightgrey' highlightColor='grey'
+ class="list-group-item clearfix"
+ [routerLink]='[index]'
+ routerLinkActive='active' >
+ <!-- (click)="onSelected()"> -->
+  <div class="pull-left">
+    <h4 class="list-group-item-heading">
+     <strong> Recipe Name:</strong>{{recipe.name}}
+    </h4>
+    <p class="list-group-item-text">
+      <strong>Decription:</strong>{{recipe.description}}</p>
+  </div>
+  <span class="pull-right">
+      <!-- <img src="{{recipe.imagePath}}" class="img-responsive" style="max-height:50px;"  alt="{{recipe.name}}"> -->
+      <!--OR  -->
+    <img [src]="recipe.imagePath" class="img-responsive" style="max-height:50px;"  alt="{{recipe.name}}">
+  </span>
+
+</a>
